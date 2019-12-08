@@ -6,6 +6,10 @@
 </head>
 <body>
 <h1>Jobs Candidates</h1>
-
+<ol>
+    {% for job in jobs %}
+    <li>{{ job.job_url }}</li>
+    {% endfor %}
+</ol>
 </body>
 </html>
